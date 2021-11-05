@@ -9,6 +9,11 @@ class ProductController extends Controller
 {
     public function product()
     {
-        return view('product');
+        $product = "Product Page";
+        $product_item = ["Rice","Fruit","Juice"];
+        return view('product',[
+            'product' => $product,
+            'product_item' => $product_item
+        ]);
     }
 }

@@ -7,6 +7,13 @@
     <title>product</title>
 </head>
 <body>
-    <h1>This is product Page</h1>
+    <h1>This is {{$product}}</h1>
+    @foreach ($product_item as $item)
+
+        @if ($item == "Rice")
+            <h2>{{$item}}</h2>
+        @endif
+
+    @endforeach
 </body>
 </html>
